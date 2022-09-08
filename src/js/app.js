@@ -1,11 +1,10 @@
 // TODO: write code here
 
-// comment this to pass build
-const unusedVariable = 'variable';
-
-// for demonstration purpose only
-export default function demo(value) {
-  return value;
+export default function sum(items) {
+  let result = 0;
+  for (const item of items) {
+    result += item;
+  }
+  return result;
 }
-
-console.log('app.js included');
+console.log(sum([1, 2]));
